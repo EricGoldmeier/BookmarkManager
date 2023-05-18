@@ -1,4 +1,4 @@
-// let bookmarks = [];
+ let bookmarks = [];
 
 //create function to add to bookmarks array
 const addBookmark = () => {
@@ -20,7 +20,7 @@ const removeBookmark = (index) => {
 const renderBookmarks = () => {
     const bkList = document.getElementById("bkList")
     bkList.innerHTML = ""
-    const bookmarks = bookmarks.map((bookmark, index) => {
+    bookmarks.map((bookmark, index) => {
         const listElement = document.createElement("li")
         listElement.className = "bkElem"
         listElement.innerHTML = `<a href="${bookmark.link}">${bookmark.tag}</a>`
